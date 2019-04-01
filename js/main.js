@@ -2,7 +2,7 @@
 ------------------------------------
 	HALO - Photography Portfolio
 	Version: 1.0
- ------------------------------------ 
+ ------------------------------------
  ====================================*/
 
 
@@ -13,7 +13,7 @@ $(window).on('load', function() {
 	/*------------------
 		Preloder
 	--------------------*/
-	$(".loader").fadeOut(); 
+	$(".loader").fadeOut();
 	$("#preloder").delay(400).fadeOut("slow");
 
 });
@@ -53,7 +53,7 @@ $(window).on('load', function() {
 	--------------------*/
 	var w_height = $(window).innerHeight();
 	$('.hs-item').height(w_height);
-	
+
 	$('.hero-slider').owlCarousel({
 		loop: true,
 		nav: true,
@@ -154,4 +154,3 @@ $(window).on('load', function() {
 
 
 })(jQuery);
-

@@ -2,7 +2,7 @@
 ------------------------------------
   HALO - Photography Portfolio
   Version: 1.0
- ------------------------------------ 
+ ------------------------------------
  ====================================*/
 
 /*----------------------------------------*/
@@ -597,9 +597,9 @@ ol {
 	left: 50%;
 	top: 26px;
 	margin-left: -17px;
-	-webkit-transform: rotate(-45deg);
-	    -ms-transform: rotate(-45deg);
-	        transform: rotate(-45deg);
+	-webkit-transform: translate(0px, 0.5rem);
+	    -ms-transform: translate(0px, 0.5rem);
+	        transform: translate(0px, 0.5rem);
 	opacity: 0;
 	-webkit-transform-origin: top center;
 	    -ms-transform-origin: top center;
@@ -1356,7 +1356,7 @@ ol {
 
 
 /*---------------------
-	Responsive 
+	Responsive
 -----------------------*/
 @media only screen and (max-width: 1650px) {
 	.sp-pad {
