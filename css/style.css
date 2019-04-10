@@ -847,7 +847,17 @@ ol {
 .main-timeline{
 	 font-family: 'Oxygen', sans-serif;
 	 position: relative;
+
+	 background-image: url("http://www.pngall.com/wp-content/uploads/2016/03/Stars-PNG-Image.png");
+	 /* Full height */
+	 height: 100%;
+	 /* Create the parallax scrolling effect */
+	 background-attachment: fixed;
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
 }
+
 .main-timeline:before{
 	 content: '';
 	 height: 100%;
@@ -895,10 +905,16 @@ ol {
 .main-timeline .timeline-year-bin {
 }
 
+@keyframes timeline-fade {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
 .main-timeline .timeline-year-bin .timeline-year {
 	content: '';
 	height: 100px;
 	width: 100px;
+	font-weight: 800;
 	background-color: #AAA;
 	border-radius: 50%;
 	border: 5px solid #DDD;
@@ -911,7 +927,7 @@ ol {
 
 .timeline-year .year {
 	border: none;
-	margin-top: 50px;
+	margin-top: 30%;
 	text-align: center;
 	background: none;
 }
@@ -934,7 +950,7 @@ ol {
 	 position: relative;
 }
 .main-timeline .timeline-content:hover{ text-decoration: none; }
-.main-timeline .title{
+.main-timeline .title {
 	 color: #222121;
 	 background-color: #FFF;
 	 font-size: 25px;
@@ -1039,20 +1055,64 @@ ol {
 	 }
 	 .main-timeline .timeline:nth-child(even) .timeline-icon,
 	 .main-timeline .timeline-icon{
-			 font-size: 30px;
+			/* font-size: 30px;
 			 line-height: 50px;
 			 height: 50px;
 			 width: 50px;
 			 transform: translateY(0);
 			 left: auto;
 			 right: -20px;
-			 top: -35px;
+			 top: -35px;*/
 	 }
 	 .main-timeline .title{ font-size: 20px; }
 	 .main-timeline .timeline:nth-child(even) .description,
 	 .main-timeline .description{
 			 padding: 15px 15px 15px 15px;
 	 }
+
+	 .small-bg{
+		 position: relative;
+ 		 padding-left: 1px;
+		 right: 50%;
+		 top: 0;
+		 	-webkit-transform: translateX(50%);
+	 		-moz-transform: translateX(50%);
+			-ms-transform: translateX(50%);
+		 	-o-transform: translateX(50%);
+			transform: translateX(50%);
+			animation-name: timeline-fade;
+			animation-duration: 1s;
+	 }
+
+	 .small-bar {
+		 background-color: #DDD;
+		 height: 4em;
+		 width: 100%;
+		 animation-name: timeline-fade;
+		 animation-duration: 1s;
+	 }
+
+	 /*.main-timeline .timeline-year-bin .timeline-year {
+	 	content: '';
+	 	height: 100px;
+	 	width: 100px;
+	 	font-weight: 800;
+	 	background-color: #AAA;
+	 	border-radius: 50%;
+	 	border: 5px solid #DDD;
+	 	transform: translateX(-50%);
+	 	position: relative;
+	 	left: 50%;
+	 	top: 50%;
+	 	z-index: 0;
+	 }
+
+	 .timeline-year .year {
+	 	border: none;
+	 	margin-top: 30%;
+	 	text-align: center;
+	 	background: none;
+	 }*/
 }
 
 .year {
