@@ -504,6 +504,19 @@ ol {
 /*---------------------
 	Header section
 -----------------------*/
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+	z-index: 100;
+	transition: padding-top .2s ease;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: background-color .3s ease;
+	background-color: rgba(0,15,51,1);
+}
+
 .header-section {
 	position: absolute;
 	width: 100%;
@@ -532,6 +545,9 @@ ol {
 	border: none;
 	background: none;
 	color: #fff;
+}
+
+.se-btn:hover{
 }
 
 .search-top input[type='text'] {
@@ -858,6 +874,8 @@ ol {
 	 background-size: cover;
 }
 
+
+
 .main-timeline:before{
 	 content: '';
 	 height: 100%;
@@ -943,7 +961,7 @@ ol {
 }
 .main-timeline .timeline-content{
 	 color: #000;
-	 background-color: #FFF;
+	 background-color: rgba(255,255,255);
 	 width: 40%;
 	 border-radius: 0px;
 	 display: block;
@@ -1152,6 +1170,7 @@ ol {
 -----------------------*/
 .services-section {
 	position: relative;
+	background-color: #FAFAFA;
 }
 
 .services-warp {
@@ -1820,17 +1839,18 @@ ol {
 	}
 }
 
-/* Large Mobile :480px. */
+/* Large Mobile :480px. */              /*-------------  This bug makes the main-menu disappear when going from small to large screens -------------*/
 @media only screen and (max-width: 767px) {
 	.search-top {
 		display: none;
 	}
 	.nav-switch {
-		position: absolute;
+		position: relative;
+		float: right;
 		right: 20px;
 		font-size: 30px;
 		color: #fff;
-		top: 38px;
+		top: 50%;
 		display: block;
 	}
 	.main-menu {

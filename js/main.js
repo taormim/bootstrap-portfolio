@@ -18,6 +18,26 @@ $(window).on('load', function() {
 
 });
 
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+		header.classList.remove("header-section");
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+		header.classList.add("header-section");
+  }
+};
+
 (function($) {
 
 	/*------------------
@@ -152,5 +172,97 @@ $(window).on('load', function() {
 	});
 
 
+	/*------------------
+		Animate Scrolling
+	--------------------*/
+	$(function() {
+	  $('a[href*="#scrollme"]').click(function() {
+	  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	    var target = $(this.hash);
+	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	    if (target.length) {
+	    $('html, body').animate({
+	      scrollTop: target.offset().top
+	    }, 1000);
+	    return false;
+	    }
+	  }
+	  });
+	});
+
+	$(function() {
+		$('a[href*="#scroll-services"]').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+			return false;
+			}
+		}
+		});
+	});
+
+	$(function() {
+		$('a[href*="#scroll-home"]').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+			return false;
+			}
+		}
+		});
+	});
+
+	$(function() {
+		$('a[href*="#scroll-about"]').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+			return false;
+			}
+		}
+		});
+	});
+
+	$(function() {
+		$('a[href*="#scroll-portfolio"]').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+			return false;
+			}
+		}
+		});
+	});
+
+	$(function() {
+		$('a[href*="#scroll-contact"]').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+			return false;
+			}
+		}
+		});
+	});
 
 })(jQuery);
