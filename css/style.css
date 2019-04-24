@@ -1008,8 +1008,8 @@ ol {
 	 left: auto;
 	 right: 40.5%;
 }
-.main-timeline .timeline:nth-child(even) .timeline-content{ float: right; border-left: 2px solid #222121; }
-.main-timeline .timeline:nth-child(odd) .timeline-content{ float: left; border-right: 2px solid #222121; }
+.main-timeline .timeline:nth-child(even) .timeline-content{ float: right; border-left: 2px solid #AAA; }
+.main-timeline .timeline:nth-child(odd) .timeline-content{ float: left; border-right: 2px solid #AAA; }
 /*.main-timeline .timeline:nth-child(even) .timeline-icon{
 	 left: auto;
 	 right: -35px;
