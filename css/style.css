@@ -541,6 +541,10 @@ ol {
 	margin-left: 30px;
 }
 
+.search-top:hover {
+	/* Hovering over the search button */
+}
+
 .search-top .se-btn {
 	border: none;
 	background: none;
@@ -759,12 +763,13 @@ ol {
 	Intro section
 -----------------------*/
 .intro-text {
-	padding-top: 70px;
+	/*padding-top: 70px;*/
 }
 
 .intro-text p {
 	margin-bottom: 50px;
 }
+
 
 /*---------------------
 	Portfolio section
