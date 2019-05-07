@@ -74,7 +74,7 @@ function myFunction() {
 	var w_height = $(window).innerHeight();
 	$('.hs-item').height(w_height);
 
-	$('.hero-slider').owlCarousel({
+/*	$('.hero-slider').owlCarousel({
 		loop: true,
 		nav: true,
 		dots: true,
@@ -84,7 +84,7 @@ function myFunction() {
 		navText: [' ', '<i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i>'],
 		items: 1,
 		autoplay: true
-	});
+	});*/
 	var dot = $('.hero-slider .owl-dot');
 	dot.each(function() {
 		var index = $(this).index() + 1;
