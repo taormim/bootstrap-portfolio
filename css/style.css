@@ -516,6 +516,9 @@ ol {
 	padding-bottom: 20px;
 	transition: background-color .3s ease;
 	background-color: rgba(0,15,51,1);
+	-webkit-box-shadow: 0 0px 18px 0px #333;
+	-moz-box-shadow: 0 0px 18px 0px #333;
+	box-shadow: 0 0px 18px 0px #333;
 }
 
 .header-section {
